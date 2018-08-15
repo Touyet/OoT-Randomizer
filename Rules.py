@@ -136,7 +136,7 @@ def global_rules(world):
     set_rule(world.get_entrance('Zora River Rocks'), lambda state: state.has_explosives())
     set_rule(world.get_location('Zora River Lower Freestanding PoH'), lambda state: state.has_explosives() or state.has('Progressive Scale') or (state.has('Hover Boots') and state.is_adult()))
     set_rule(world.get_location('Zora River Upper Freestanding PoH'), lambda state: state.has_explosives() or state.has('Progressive Scale') or (state.has('Hover Boots') and state.is_adult()))
-    set_rule(world.get_location('Frog Ocarina Game'), lambda state: state.can_play('Zeldas Lullaby') and state.can_play('Sarias Song') and state.can_play('Suns Song') and state.can_play('Eponas Song') and state.can_play('Song of Time') and state.can_play('Song of Storms'))
+    set_rule(world.get_location('Frog Ocarina Game'), lambda state: state.can_play('Zeldas Lullaby') and state.can_play('Sarias Song') and state.can_play('Suns Song') and state.can_play('Eponas Song') and state.can_play('Song of Time') and state.can_play('Song of Storms') and (not world.logic_no_frog_ocarina_game))
     set_rule(world.get_location('Frogs in the Rain'), lambda state: state.can_play('Song of Storms'))
     set_rule(world.get_location('Underwater Bottle'), lambda state: state.can_dive())
     set_rule(world.get_location('King Zora Moves'), lambda state: state.has('Bottle with Letter'))

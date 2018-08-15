@@ -944,6 +944,22 @@ setting_infos = [
                       Memory game is time consuming.
                       '''
         }),
+    Setting_Info('logic_no_frog_ocarina_game', bool, 1, True, 
+        {
+            'help': '''\
+                    You will not be expected to play the frog ocarina game in lost woods with the skull kids.
+                    ''',
+            'action': 'store_true'
+        },
+        {
+            'text': 'No Frog Ocarina Game',
+            'group': 'rewards',
+            'widget': 'Checkbutton',
+            'default': 'unchecked',
+            'tooltip':'''\
+                      Playing all the song before doing the game is time consuming and repetitive
+                      '''
+        }),
     Setting_Info('logic_no_second_dampe_race', bool, 1, True, 
         {
             'help': '''\
